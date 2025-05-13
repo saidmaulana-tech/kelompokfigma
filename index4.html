@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Great Giant Foods</title>
   <style>
-    /* General styles */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -58,15 +57,28 @@
 
     /* Hero section */
     .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('gambarr/nanas.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
       text-align: center;
-      padding: 100px 20px;
-      background: url('https://via.placeholder.com') no-repeat center/cover;
-
     }
 
     .hero h1 {
-      font-size: 3em;
+      font-size: 4em;
       margin: 0;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-top: 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
     }
 
     /* About section */
@@ -152,47 +164,53 @@
       .menu-toggle {
         display: block;
       }
+
+      .hero h1 {
+        font-size: 2.5em;
+      }
+
+      .hero p {
+        font-size: 1.2em;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <nav class="navbar">
       <div class="logo">GGF</div>
-      </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="index2.html">Hubungi Kami</a></li>
         <li><a href="index3.html">Bisnis</a></li>
-        <li><a href="index4.html">publikasi</a></li>
+        <li><a href="index4.html">Publikasi</a></li>
         <li><a href="index5.html">Kehadiran Global</a></li>
         <li><a href="index6.html">Produk</a></li>
         <li><a href="index13.html">Profil</a></li>
         <li><a href="index15.html">Toko</a></li>
-
-
-      </nav>
+      </ul>
+    </nav>
   </header>
+
   <!-- Hero Section -->
   <section class="hero">
-    <img src="gambarr/nanas.jpg" width="1200" height="700" alt="great giant foods">
-</section>
-
-  <section id="home" class="hero">
-    <h1>Great Giant Foods</h1>
-    <p>Making food great.</p>
+    <h1>MAKANAN RAKSASA BESAR</h1>
+    <p>Membuat makanan enak</p>
   </section>
 
+  <!-- About Section -->
   <section id="about" class="about">
     <h2>About Us</h2>
     <p>Great Giant Foods is committed to sustainability and excellence in food production.</p>
   </section>
 
+  <!-- Publications -->
   <section id="publications" class="publications">
     <h2>Publications</h2>
     <div class="grid-container">
       <div class="card">
-        <img src="gambarr/Screenshot_4.png" alt="GGF Probi">
+        <img src="gambarr/Screenshot_4.png" alt="GGF Profil">
         <h3>Profil Perusahaan</h3>
       </div>
       <div class="card">
